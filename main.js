@@ -16,7 +16,9 @@ function btnOperation(id, isIncrease) {
     updateSpan('Feedback');
 }
 
-document.getElementById('bookingBtn').addEventListener('click', function () {
+//Booking button Operation 
+function bookingBtnOperation() {
+    console.log('booking button are working')
     const totalValue = getSpanValue('total');
     if (totalValue <= 0) {
         alert('Please Select your plan. ')
@@ -26,7 +28,8 @@ document.getElementById('bookingBtn').addEventListener('click', function () {
         document.getElementById('feedback').style.display = 'block';
     }
 
-})
+}
+
 
 //function area
 //update all span value
